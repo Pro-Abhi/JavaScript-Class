@@ -1,4 +1,8 @@
-function add(num1, num2){
-  return(num1+num2);
+function factorial(num, fact){
+  if (num>0){
+    fact *= num;
+    return factorial(num-1,fact)
+  }
+  return(fact)
 }
-console.log(add(5,6));
+console.log(factorial(5,1))
